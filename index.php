@@ -7,7 +7,7 @@
 
 	
 		<a href="login.php" class="float-left btn btn-primary" style="margin-right:10px;">Login</a>
-		<a href="login.php" class="float-left btn btn-success">Signup</a>
+		<a href="Signup.php" class="float-left btn btn-success">Signup</a>
 	
 		
 		<a href="login.php" class="float-right btn btn-danger">Admin Login</a>
@@ -21,7 +21,7 @@
 		    <a href="book.php" class="btn btn-primary float-right">Book Now</a>
 		  </div>
 		  <div class="card-body">
-		  	lafkjalfnlka fhf jkhdf j
+		  	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur soluta nihil, tenetur nulla fugiat non corrupti quibusdam voluptate ullam provident laborum, a praesentium neque natus asperiores, rerum eius quia. Delectus.
 		  </div>
 		</div>
 		

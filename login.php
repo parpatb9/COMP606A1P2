@@ -3,15 +3,22 @@
 
 <div class="row">
 <!-- Login section -->
+<div class="col-lg-3">
+	
+</div>
+<div class="col-lg-6" >
+<div class="container formAllignment">
+	<div class="jumbotron" >
 
-<div class="col-lg-6">
-
-	<div class="jumbotron">
 		<form action="#" method="post">
-			<legend>Login Form</legend>
+			<div align="center">
+				<legend>Login Form</legend>
+
+			</div>
+			
 			<div class="form-group">
 				<label for="uname">Username :</label>
-				<input type="text" id="uname" name="uname" required class="form-control">
+				<input type="email" id="uname" name="uname" required class="form-control">
 			</div>
 			<div class="form-group">
 				<label for="pass">Password :</label>
@@ -22,12 +29,14 @@
 			</div>
 		</form>
 	</div>
+	</div>
+</div>
+
+<div class="col-lg-3">
 	
 </div>
 <!-- Signup -->
-<div class="col-lg-6">
-	
-</div>
+
 </div>
 
 
