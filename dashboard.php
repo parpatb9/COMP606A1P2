@@ -11,12 +11,7 @@
   
                                
   <table class="table table-hover">
-    <!-- <thead>
-      <tr>
-        <th>#</th>
-        <th>Firstname</th>
-      </tr>
-    </thead> -->
+   
     <tbody>
       <tr>
         <td>Book Apointment</td>
