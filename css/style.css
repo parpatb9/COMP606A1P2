@@ -1,6 +1,7 @@
 body
 {
-	
+	background-image: url("assets\img\7.jpg");
+	background-repeat: no-repeat;
 }
 .form-control{
 	border-radius: 25px;
@@ -11,9 +12,8 @@ body
 	margin-top: 45px;
 }
 
-.signup{
-	/*margin: 100px 100px;*/
-}
+
+
 
 .dashboard{
 

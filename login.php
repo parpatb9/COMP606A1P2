@@ -1,7 +1,7 @@
 <?php include('header.php'); ?>
 
 
-<div class="row">
+<div class="row" style="background-image: url('assets/img/1.jp');">
 <!-- Login section -->
 <div class="col-lg-3">
 	
