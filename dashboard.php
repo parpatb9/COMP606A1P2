@@ -5,12 +5,12 @@
 
 <div class="container dashboard">
 
-	<div class="jumbotron">
+	<div class="jumbotron index">
 		<h2 align="center" style="text-align: center">Dashboard</h2>
 	</div>
   
                                
-  <table class="table table-hover">
+  <table class="table table-hover" style="background-color: rgba(255,255,255,0.5);">
    
     <tbody>
       <tr>
@@ -23,7 +23,7 @@
       </tr>
       <tr>
         <td>Cancel your Appointment</td>
-        <td><button name="cancel" class="btn btn-danger btn-block" onclick="window.open('cancelAppointment.php','_self');">Cancle</button></td>
+        <td><button name="cancel" class="btn btn-danger btn-block" onclick="window.open('cancleAppointment.php','_self');">Cancle</button></td>
       </tr>
     </tbody>
   </table>

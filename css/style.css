@@ -1,6 +1,7 @@
 body
 {
-	background-image: url("assets\img\7.jpg");
+	background-image: url("assets/img/7.jpg");
+
 	background-repeat: no-repeat;
 }
 .form-control{
@@ -17,5 +18,24 @@ body
 
 .dashboard{
 
-	margin : 25% 0px;
+	margin : 10% 0px;
+	color: black;
+	font-size: 26px;
+}
+
+.index{
+	background-color: rgba(5,4,10,0.8);
+	background-blend-mode: lighten;
+	color: gray;
+}
+
+.card{
+	background-color: rgba(10,3,255,0.5);
+	color: white;
+
+}
+
+.r1{
+	color: black;
+	font-style: bold;
 }

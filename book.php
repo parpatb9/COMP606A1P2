@@ -1,17 +1,17 @@
 <?php include('header.php'); ?>
 
-	<div class="jumbotron">
+	<div class="jumbotron index">
 		
 		<h1 align="center">Book Appointment</h1>
 	</div>
 		
-		<div class="row">
-			<div class="col-lg-6">
+		<div class="row r1" >
+			<div class="col-lg-6" style="background-blend-mode: lighten; background-color: rgba(255,255,255,0.3);">
 				
-				<h3 style="margin-top: 10px;">Type of massage</h3>
-				<h3 style="margin-top: 10px;">select date</h3>
-				<h3 style="margin-top: 10px;">Select time slot</h3>
-				<h3 style="margin-top: 10px;">Write something about you</h3>
+				<h3 style="margin-top: 10px;">Type of massage :</h3>
+				<h3 style="margin-top: 10px;">select date :</h3>
+				<h3 style="margin-top: 10px;">Select time slot :</h3>
+				<h3 style="margin-top: 10px;">Write something about you :</h3>
 
 
 
@@ -39,7 +39,7 @@
 				</select> 
 
 
-				<input type="textbox" name="comment"  style=" margin-top: 10px; text-align: left; width: 542px; height: 100px; background-color: rgba(0,0,0,0.03);" >
+				<input type="textbox" name="comment"  style=" margin-top: 10px; text-align: left; width: 542px; height: 100px; background-color: rgba(255,255,255,0.7);" >
 
 
 
@@ -55,9 +55,9 @@
 		
 
 
-		<div class="row" >
+		<div class="row " >
 			
-			<div  style="padding: 100px 400px; ">
+			<div  style="padding: 100px 400px; background-blend-mode: darken;">
 
 				<input type="submit" name="bookFinal" value="Book now" class="btn btn-danger" style="width: 200px;" onclick="document.getElementById(#).action = #;">
 			</div>

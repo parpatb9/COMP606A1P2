@@ -1,13 +1,13 @@
 <?php include('header.php'); ?>
 
 
-<div class="row" style="background-image: url('assets/img/1.jp');">
+<div class="row" >
 <!-- Login section -->
 <div class="col-lg-3">
 	
 </div>
 <div class="col-lg-6" >
-<div class="container formAllignment">
+<div class="container formAllignment" style="background-image: url('assets/img/1.jp');">
 	<div class="jumbotron" >
 
 		<form action="#" method="post">
