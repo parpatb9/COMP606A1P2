@@ -9,7 +9,7 @@
 	<div class="col-lg-6">
 		<div class="container formAllignment">
 			<div class="jumbotron signup">
-			<form action="#">
+			<form action="#" method="post">
 
 				<div align="center">
 					<legend>Registration Form</legend>

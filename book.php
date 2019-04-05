@@ -51,10 +51,12 @@
 
 
 		<div class="row">
+			
 			<div class="container" style="padding: 100px 400px;" >
 
-				<input type="submit" name="bookFinal" value="Book now" class="btn btn-danger" style="width: 200px;">
+				<input type="submit" name="bookFinal" value="Book now" class="btn btn-danger" style="width: 200px;" onclick="document.getElementById(#).action = #;>
 			</div>
+		
 		</div>
 	 	
 	 	
