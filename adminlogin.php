@@ -11,8 +11,8 @@
 
 <!-- Admin Login section -->
 	<div class="col-lg-6" >
-		<div class="container formAllignment" style="background-image: url('assets/img/1.jp');">
-			<div class="jumbotron" >
+		<div class="container formAllignment" >
+			<div class="jumbotron" style="background-color: rgba(51,51,51,0.9);">
 
 				<form action="#" method="post">
 					<div align="center">
@@ -28,8 +28,8 @@
 						<label for="a_pass">Password :</label>
 						<input type="password" id="a_pass" name="a_pass" required class="form-control">
 					</div>
-					<div class="form-group">
-						<input type="submit" name="submit1" value="Login" class="btn btn-success form-control">
+					<div class="form-group" style="margin-top: 50px;">
+						<input type="submit" name="submit1" value="Login" class="btn btn-danger form-control">
 					</div>
 				</form>
 			</div>

@@ -15,7 +15,7 @@
 		  } );
 		  </script>
 </head>
-<body style="background-image: url('assets/img/7.jpg'); background-color: rgba(3, 5, 8, 0.7);
+<body style="background-image: url('assets/img/back2.jpg'); background-color: rgba(3, 5, 8, 0.7);
     background-blend-mode: lighten;" >
 <div class="container">
 	

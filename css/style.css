@@ -6,6 +6,9 @@
 
 .formAllignment{
 	margin-top: 45px;
+	color: white;
+	height: 500px;
+	font-size: 15px;
 }
 
 
@@ -13,7 +16,7 @@
 
 .dashboard{
 
-	margin : 10% 0px;
+	/*margin : 10% 0px;*/
 	color: black;
 	font-size: 26px;
 }
@@ -21,11 +24,11 @@
 .index{
 	background-color: rgba(5,4,10,0.8);
 	background-blend-mode: lighten;
-	color: gray;
+	color: white;
 }
 
 .card{
-	background-color: rgba(10,3,255,0.5);
+	background-color: rgba(5,4,10,0.8);
 	color: white;
 
 }
@@ -33,4 +36,28 @@
 .r1{
 	color: black;
 	font-style: bold;
+	width: 100%;
+}
+
+.c1{
+	background-blend-mode: lighten;
+	background-color: rgba(255,255,255,0.3);
+	margin-left: -10px;
+}
+
+.i2{
+	background-color: rgba(5,4,10,0.8);
+	background-blend-mode: lighten;
+	color: white;
+	width: 1200px;
+	margin-left: -25px;
+	float: center;
+}
+	
+.card{
+
+	margin-top: -40px;
+	width: 245px;
+	height: 300px;
+
 }

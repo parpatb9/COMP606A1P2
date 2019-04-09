@@ -21,10 +21,10 @@
 
 	<!-- start of coloum first -->
 	<div class="col-lg-3">
-		<div class="card" style="width: 14rem;">
+		<div class="card" >
 			<div class="card-header">
-		   		<h4 style="font-size: 18px;"> Sports Massage</h4>
-		    	<a href="book.php" class="btn btn-danger btn-block" style="margin-top: 5px;">Book Now</a>
+		   		<h4 style="font-size: 21px;"> Sports Massage</h4>
+		    	<a href="book.php" class="btn btn-danger btn-block" style="margin-top: 20px;">Book Now</a>
 		  	</div>
 		 <div class="card-body">
 		  	Event preparation is important and regular sports massage should be part of your training regime
@@ -36,10 +36,10 @@
 <!-- start of second coloum -->
 
 	<div class="col-lg-3">
-		<div class="card" style="width: 14rem;">
+		<div class="card">
 			<div class="card-header">
-		   		<h4 style="font-size: 18px;"> Deep Tissue Massage</h4>
-		    	<a href="book.php" class="btn btn-danger btn-block" style="margin-top: 6px;">Book Now</a>
+		   		<h4 style="font-size: 21px;"> Deep Tissue Massage</h4>
+		    	<a href="book.php" class="btn btn-danger btn-block" style="margin-top:20px;">Book Now</a>
 		  	</div>
 		  	<div class="card-body">
 		  		Gone too hard and need massage that really gets to the root of the issue – try deep tissue massage
@@ -53,10 +53,10 @@
 
 
 	<div class="col-lg-3">
-		<div class="card" style="width: 14rem;">
+		<div class="card" >
 		 	<div class="card-header">
-		   		<h4 style="font-size: 18px;">Therapeutic Massage</h4>
-		    	<a href="book.php" class="btn btn-danger btn-block" style="margin-top: 5px;">Book Now</a>
+		   		<h4 style="font-size: 21px;">Therapeutic Massage</h4>
+		    	<a href="book.php" class="btn btn-danger btn-block" style="margin-top: 20px;">Book Now</a>
 		  	</div>
 		  	<div class="card-body">
 		  	Just feeling stiff and need some of that muscle tension released then you need therapeutic massage
@@ -69,10 +69,10 @@
 <!-- Start of fourth coloum -->
 
 	<div class="col-lg-3">
-		<div class="card" style="width: 14rem;">
+		<div class="card">
 		 	<div class="card-header">
-		   		<h4 style="font-size: 18px;">Relaxation Massage</h4>
-		    	<a href="book.php" class="btn btn-danger btn-block" style="margin-top: 5px;">Book Now</a>
+		   		<h4 style="font-size: 22px;">Relaxation Massage</h4>
+		    	<a href="book.php" class="btn btn-danger btn-block" style="margin-top: 20px;">Book Now</a>
 		  	</div>
 		  	<div class="card-body">
 		  		Sometimes you just want to chill out, book a relaxation massage at MuscleWorx

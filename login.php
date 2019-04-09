@@ -11,7 +11,7 @@
 <!-- Login section -->
 		<div class="col-lg-6" >
 			<div class="container formAllignment" >
-				<div class="jumbotron" >
+				<div class="jumbotron" style="background-color: rgba(51,51,51,0.9);">
 
 					<form action="#" method="post">
 						<div align="center">
@@ -26,8 +26,13 @@
 							<label for="pass">Password :</label>
 							<input type="password" id="pass" name="pass" required class="form-control">
 						</div>
+
+						<div class="checkbox">
+						    <label><input type="checkbox"> Remember me</label>
+						</div>
+
 						<div class="form-group">
-							<input type="submit" name="submit" value="Login" class="btn btn-success form-control">
+							<input type="submit" name="submit" value="Login" class="btn btn-danger form-control">
 						</div>
 					</form>
 				</div>
@@ -41,7 +46,7 @@
 		<div class="col-lg-3">
 	
 		</div>
-		
+
 
 <!-- end of row -->
 </div>
