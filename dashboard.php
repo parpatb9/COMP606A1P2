@@ -8,11 +8,12 @@
 <!-- jumboron -->
   <div class="jumbotron index">
 		  <h2 align="center" style="text-align: center">Dashboard</h2>
+      <a href="logout.php" class="btn btn-primary float-right">Logout</a>
 	</div>
-  
+
 <!-- Table Start   -->
   <table class="table table-hover" style="background-color: rgba(255,255,255,0.5);">
-   
+
     <tbody>
 
       <tr>
@@ -43,5 +44,3 @@
 
 
 <?php include('footer.php'); ?>
-
-
