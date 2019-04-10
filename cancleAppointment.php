@@ -1,4 +1,15 @@
 <?php include('header.php'); ?>
+<?php
+session_start();
+if(!isset($_SESSION['uid']))
+{
+	?>
+	<script type="text/javascript">
+		window.open('login.php','_self');
+	</script>
+	<?php
+}
+?>
 
 
 <!-- container to store form -->
@@ -12,7 +23,7 @@
 			<input type="submit" name="noCancle" value="No" class="btn btn-danger btn-block" style="width: 300px; margin-left: 400px;">
 
 		</form>
-		
+
 	</div>
 
 

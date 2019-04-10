@@ -1,6 +1,17 @@
 <?php include('header.php'); ?>
+<?php
+session_start();
+if(!isset($_SESSION['uid']))
+{
+	?>
+	<script type="text/javascript">
+		window.open('login.php','_self');
+	</script>
+	<?php
+}
+?>
 <?php include('function.php'); ?>
-<?php session_start(); ?>
+
 	<div class="jumbotron index">
 		<h1 align="center">View Appointments</h1>
 		<a href="dashboard.php" class="btn btn-primary float-left">Back</a>

@@ -1,4 +1,15 @@
 <?php include('header.php'); ?>
+<?php
+session_start();
+if(!isset($_SESSION['aid']))
+{
+	?>
+	<script type="text/javascript">
+		window.open('adminlogin.php','_self');
+	</script>
+	<?php
+}
+?>
 <?php include('function.php'); ?>
 
 <?php

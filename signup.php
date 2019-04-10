@@ -73,7 +73,7 @@ if(isset($_POST['signup']))
 
 	$sql = "INSERT INTO `users` (`uid`, `fname`, `lname`, `email`, `password`)
 					VALUES (NULL, '$fname', '$lname', '$email', '$password');";
-				
+
 	$run = mysqli_query($con,$sql);
 
 	if($run)

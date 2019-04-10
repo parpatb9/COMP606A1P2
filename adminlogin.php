@@ -1,5 +1,15 @@
 <?php include('header.php'); ?>
-
+<?php
+session_start();
+if(isset($_SESSION['aid']))
+{
+	?>
+	<script type="text/javascript">
+		window.open('admindashboard.php','_self');
+	</script>
+	<?php
+}
+?>
 
 <div class="row" >
 
@@ -63,7 +73,7 @@ if(isset($_POST['submit1']))
 	$data = mysqli_fetch_assoc($run);
 	if(mysqli_num_rows($run)>0)
 	{
-		session_start();
+
 		$_SESSION['aid']=$data['aid'];
 		?>
 		<script type="text/javascript">

@@ -1,4 +1,15 @@
 <?php include('header.php'); ?>
+<?php
+session_start();
+if(!isset($_SESSION['uid']))
+{
+	?>
+	<script type="text/javascript">
+		window.open('login.php','_self');
+	</script>
+	<?php
+}
+?>
 <?php include('dbcon.php'); ?>
 <?php
 function getTimesloat()

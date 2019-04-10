@@ -1,6 +1,16 @@
 <?php include('header.php'); ?>
 <?php include('function.php'); ?>
-<?php session_start(); ?>
+<?php
+session_start();
+if(!isset($_SESSION['uid']))
+{
+	?>
+	<script type="text/javascript">
+		window.open('login.php','_self');
+	</script>
+	<?php
+}
+?>
 <!-- class dahsboard given to container -->
 
 <div class="container dashboard">
@@ -26,7 +36,7 @@
         <td><button name="view" class="btn btn-danger btn-block" onclick="window.open('viewAppointment.php','_self');">View  </button></td>
       </tr>
 
-      
+
 
     </tbody>
 
