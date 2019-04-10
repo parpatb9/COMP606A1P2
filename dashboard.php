@@ -1,13 +1,13 @@
 <?php include('header.php'); ?>
-
-
+<?php include('function.php'); ?>
+<?php session_start(); ?>
 <!-- class dahsboard given to container -->
 
 <div class="container dashboard">
 
 <!-- jumboron -->
   <div class="jumbotron index">
-		  <h2 align="center" style="text-align: center">Dashboard</h2>
+		  <h2 align="center" style="text-align: center">WELCOME <?php showname($_SESSION['uid']); ?></h2>
       <a href="logout.php" class="btn btn-primary float-right">Logout</a>
 	</div>
 

@@ -23,8 +23,8 @@
 	<div class="col-lg-3">
 		<div class="card" >
 			<div class="card-header">
-		   		<h4 style="font-size: 21px;"> Sports Massage</h4> <br>
-		    	<a href="book.php" class="btn btn-danger btn-block" style="margin-top: 20px;">Book Now</a>
+		   		<h4 style="font-size: 21px;"> Sports Massage</h4>
+		    	
 		  	</div>
 		 <div class="card-body">
 		  	Event preparation is important and regular sports massage should be part of your training regime
@@ -39,7 +39,7 @@
 		<div class="card">
 			<div class="card-header">
 		   		<h4 style="font-size: 21px;"> Deep Tissue Massage</h4>
-		    	<a href="book.php" class="btn btn-danger btn-block" style="margin-top:20px;">Book Now</a>
+
 		  	</div>
 		  	<div class="card-body">
 		  		Gone too hard and need massage that really gets to the root of the issue – try deep tissue massage
@@ -55,8 +55,8 @@
 	<div class="col-lg-3">
 		<div class="card" >
 		 	<div class="card-header">
-		   		<h4 style="font-size: 21px;">Therapeutic Massage</h4><br>
-		    	<a href="book.php" class="btn btn-danger btn-block" style="margin-top: 20px;">Book Now</a>
+		   		<h4 style="font-size: 21px;">Therapeutic Massage</h4>
+
 		  	</div>
 		  	<div class="card-body">
 		  	Just feeling stiff and need some of that muscle tension released then you need therapeutic massage
@@ -71,8 +71,8 @@
 	<div class="col-lg-3">
 		<div class="card">
 		 	<div class="card-header">
-		   		<h4 style="font-size: 22px;">Relaxation Massage</h4><br>
-		    	<a href="book.php" class="btn btn-danger btn-block" style="margin-top: 20px;">Book Now</a>
+		   		<h4 style="font-size: 22px;">Relaxation Massage</h4>
+
 		  	</div>
 		  	<div class="card-body">
 		  		Sometimes you just want to chill out, book a relaxation massage at MuscleWorx

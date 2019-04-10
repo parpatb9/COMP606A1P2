@@ -1,75 +1,128 @@
 <?php include('header.php'); ?>
+<?php include('dbcon.php'); ?>
+<?php
+function getTimesloat()
+{
+  global $con;
+
+  $sql = "SELECT * FROM `timeslot` ORDER BY `tid`";
+  $run = mysqli_query($con,$sql);
+  while($data = mysqli_fetch_assoc($run))
+  {
+    ?>
+    <option value="<?php echo $data['tid']; ?>"><?php echo $data['timeslot']; ?></option>
+    <?php
+  }
+}
+function getMsgList()
+{
+  global $con;
+
+  $sql = "SELECT * FROM `msgtype` ORDER BY `mid`";
+  $run = mysqli_query($con,$sql);
+  while($data = mysqli_fetch_assoc($run))
+  {
+    ?>
+    <option value="<?php echo $data['mid']; ?>"><?php echo $data['name']; ?></option>
+    <?php
+  }
+}
+?>
 
 	<div class="jumbotron i2">
 		<h1 align="center">Book Appointment</h1>
-	</div>
-		
-		<!-- r1 class given to row with two coloumns -->
-
-	<div class="row r1" >
-		<div class="col-lg-6 c1" >
-				
-			<h3 style="margin-top: 10px;">Type of massage :</h3>
-			<h3 style="margin-top: 10px;">select date :</h3>
-			<h3 style="margin-top: 10px;">Select time slot :</h3>
-			<h3 style="margin-top: 10px;">Write something about you :</h3>
-
-		</div>
-
-<!-- data insert methods -->
-
-		<div class="col-lg-6" style="float: right; margin-left: 10px;">
-
-		<!-- dropdown menu for massage selection -->
-			<select style="margin-top: 10px; text-align: left; width: 615px; " class="btn btn-primary btn-block" required>
-				   
-				<option value="volvo">Volvo</option>
-				<option value="saab">Saab</option>
-				<option value="mercedes">Mercedes</option>
-				<option value="audi">Audi</option>
-			</select> 
-
-		
-		<!-- To pick the date -->
-			<input type="date" name="date" style="margin-top: 10px; width: 615px;" class="btn btn-primary btn-block" required>
-
-
-		<!-- To select time slot -->
-
-			<select style=" margin-top: 10px; width: 615px; text-align: left;" class="btn btn-primary btn-block" required>
-				   
-				<option value="t1">10:00 am - 10:30 am</option>
-				<option value="t2">11:00 am - 11:30 am</option>
-				<option value="t3">12:00 pm - 12:30 pm</option>
-				<option value="t4">1:00 pm - 1:30 pm</option>
-			</select> 
-
-
-		<!-- its for comment -->
-
-
-			<textarea name="comment"  style=" margin-top: 10px; text-align: left; width: 615px; height: 100px; background-color: rgba(255,255,255,0.7);" placeholder="e.g Recovery from injury, Any depression, etc."></textarea>
-
-
-
-				
-		</div>		
-
+		<a href="dashboard.php" class="btn btn-primary float-left">Back</a>
 	</div>
 
-		
+	<div class="jumbotron" style="background-color:rgba(0,0,0,0.5);color:#fff;">
+		<form class="" action="book.php" method="post">
+			<div class="form-group">
+				<?php
+						if(isset($_GET['er']))
+						 {
+							 if($_GET['er']==1)
+							 {
+								 echo "<h2 style='    color: #fbff0e;text-shadow: 2px 2px 2px #190f04;'>
+								 Appointment Slot is already taken.Pls choose another timeslot.</h2>";
+							 }
 
-<!-- this row taken for button -->
 
-	<div class="row " >
-			
-		<div  style="padding: 100px 400px; background-blend-mode: darken;">
+						 }
+				 ?>
+				<legend>Book Appointment</legend>
 
-			<input type="submit" name="bookFinal" value="Book now" class="btn btn-danger" style="width: 200px;" onclick="document.getElementById(#).action = #;">
-		</div>
-		
+			</div>
+			<div class="form-group">
+				<label for="tom">Type of massage :</label>
+				<select class="form-control"  required id="tom" name="tom">
+					<?php getMsgList(); ?>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="date">Data</label>
+				<input type="date" name="date" class="form-control" id="date"  required>
+			</div>
+			<div class="form-group">
+				<label for="ts">Time Slot</label>
+				<select class="form-control" name="ts" id="ts"  required>
+				<?php getTimesloat(); ?>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="">Write Motivation</label>
+				<textarea name="comment" class="form-control"   placeholder="e.g Recovery from injury, Any depression, etc."></textarea>
+			</div>
+			<div class="form-group" align="center">
+				<input type="submit" name="submit" value="Book" class="btn btn-success form-control">
+			</div>
+		</form>
 	</div>
-	 	
-	 	
-
 <?php include('footer.php'); ?>
+
+<?php
+if(isset($_POST['submit']))
+{
+	include('dbcon.php');
+	$tom=mysqli_real_escape_string($con, $_POST['tom']);
+	$ts= $_POST['ts'];
+	$date=$_POST['date'];
+	$msg=mysqli_real_escape_string($con, $_POST['comment']);
+	session_start();
+	$uid = $_SESSION['uid'];
+
+	$check = "SELECT * FROM `appointments` WHERE `date`='$date' AND `timeslot`='$ts'";
+	$runcheck = mysqli_query($con,$check);
+	if(mysqli_num_rows($runcheck)>0)
+	{
+		?>
+		<script type="text/javascript">
+			window.open('book.php?er=1','_self');
+		</script>
+		<?php
+	}
+	else {
+		$sql = "INSERT INTO `appointments` (`apid`, `msgtype`, `date`, `timeslot`, `comment`, `uid`)
+												VALUES (NULL, '$tom', '$date', '$ts', '$msg', '$uid');";
+		$run=mysqli_query($con,$sql);
+		if($run)
+		{
+			?>
+			<script type="text/javascript">
+				alert('Success...');
+			</script>
+			<?php
+		}
+		else {
+			?>
+			<script type="text/javascript">
+				alert('Error...');
+			</script>
+			<?php
+		}
+
+	}
+
+
+
+}
+?>
