@@ -7,7 +7,6 @@
 	</div>
 
 
-	<div class="container" style="margin: 100px 0px;">
 
    <!-- For headings
                                 -->
@@ -31,7 +30,7 @@
 
    		 </tbody>
   		</table>
-	</div>
+
 
 
 <?php include('footer.php'); ?>

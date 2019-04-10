@@ -89,10 +89,10 @@ function getApListAll()
       ?>
         <tr>
           <td><?php  echo $count; ?></td>
-          <td><?php printname($data['uid']); ?></td>
+          <td><?php echo printname($data['uid']); ?></td>
           <td><?php echo $data['date']; ?></td>
-          <td><?php printtimeslot($data['timeslot']); ?></td>
-          <td><a href="details.php?apid=<?php echo $data['apid']; ?>" class="btn btn-primary">Details</a></td>
+          <td><?php echo printtimeslot($data['timeslot']); ?></td>
+          <td><a href="details1.php?apid=<?php echo $data['apid']; ?>" class="btn btn-primary">Details</a></td>
         </tr>
       <?php
     }
