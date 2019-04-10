@@ -26,10 +26,7 @@
         <td><button name="view" class="btn btn-danger btn-block" onclick="window.open('viewAppointment.php','_self');">View  </button></td>
       </tr>
 
-      <tr>
-        <td>Cancel your Appointment</td>
-        <td><button name="cancel" class="btn btn-danger btn-block" onclick="window.open('cancleAppointment.php','_self');">Cancle</button></td>
-      </tr>
+      
 
     </tbody>
 

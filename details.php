@@ -33,6 +33,6 @@ $data = getApDetail($apid)
 </tr>
 <tr>
   <th>Cancel ??</th>
-  <td> <a href="canapp.php?apid=<?php echo $apid;  ?>">Cancel</a> </td>
+  <td> <a href="canapp.php?apid=<?php echo $apid;  ?>" class="btn btn-danger">Cancel</a> </td>
 </tr>
 </table>
