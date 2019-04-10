@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Apr 10, 2019 at 04:50 AM
+-- Generation Time: Apr 10, 2019 at 11:19 AM
 -- Server version: 5.7.24
 -- PHP Version: 7.2.14
 
@@ -25,6 +25,27 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `admin`
+--
+
+DROP TABLE IF EXISTS `admin`;
+CREATE TABLE IF NOT EXISTS `admin` (
+  `aid` int(11) NOT NULL AUTO_INCREMENT,
+  `uname` varchar(50) NOT NULL,
+  `pass` varchar(50) NOT NULL,
+  PRIMARY KEY (`aid`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`aid`, `uname`, `pass`) VALUES
+(1, 'admin', '21232f297a57a5a743894a0e4a801fc3');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `appointments`
 --
 
@@ -37,14 +58,7 @@ CREATE TABLE IF NOT EXISTS `appointments` (
   `comment` varchar(1000) NOT NULL,
   `uid` int(11) NOT NULL,
   PRIMARY KEY (`apid`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `appointments`
---
-
-INSERT INTO `appointments` (`apid`, `msgtype`, `date`, `timeslot`, `comment`, `uid`) VALUES
-(1, '1', '2019-04-10', '1', 'ds', 1);
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -109,14 +123,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `email` varchar(50) NOT NULL,
   `password` varchar(50) NOT NULL,
   PRIMARY KEY (`uid`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `users`
---
-
-INSERT INTO `users` (`uid`, `fname`, `lname`, `email`, `password`) VALUES
-(1, 'Purvik', 'Maheta', 'purvik@gmail.com', '0d89fca990a5b639a0078da7f83632ff');
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

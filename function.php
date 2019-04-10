@@ -64,7 +64,7 @@ function getApList($uid)
 {
   global $con;
   $count = 0;
-  $sql = "SELECT * FROM `appointments` where `uid`='$uid'";
+  $sql = "SELECT * FROM `appointments` where `uid`='$uid' ORDER BY `date`";
   $run = mysqli_query($con,$sql);
   if(mysqli_num_rows($run)>0)
   {
@@ -97,7 +97,7 @@ function getApListAll()
 {
   global $con;
   $count = 0;
-  $sql = "SELECT * FROM `appointments`";
+  $sql = "SELECT * FROM `appointments` ORDER BY `date`";
   $run = mysqli_query($con,$sql);
   if(mysqli_num_rows($run)>0)
   {
