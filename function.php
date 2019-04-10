@@ -26,6 +26,24 @@ function printname($uid)
   return $data['fname'];
 
 }
+function printlname($uid)
+{
+  global $con;
+  $sql = "SELECT * FROM `users` WHERE `uid`='$uid'";
+  $run = mysqli_query($con,$sql);
+  $data = mysqli_fetch_assoc($run);
+  return $data['lname'];
+
+}
+function printemail($uid)
+{
+  global $con;
+  $sql = "SELECT * FROM `users` WHERE `uid`='$uid'";
+  $run = mysqli_query($con,$sql);
+  $data = mysqli_fetch_assoc($run);
+  return $data['email'];
+
+}
 function printtimeslot($ts)
 {
   global $con;
@@ -119,10 +137,12 @@ function getApDetail($apid)
       $data=mysqli_fetch_assoc($run);
 
       $name = printname($data['uid']);
+      $lname = printlname($data['uid']);
+      $email = printemail($data['uid']);
       $timeslot = printtimeslot($data['timeslot']);
       $msgtype = msgtype($data['msgtype']);
       $d = array();
-      array_push($d,$name,$data['date'],$timeslot,$msgtype,$data['comment']);
+      array_push($d,$name,$data['date'],$timeslot,$msgtype,$data['comment'],$lname,$email);
       return $d;
   }
   else {

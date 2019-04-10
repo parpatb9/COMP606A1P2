@@ -98,7 +98,7 @@ if(isset($_POST['submit']))
 	$ts= $_POST['ts'];
 	$date=$_POST['date'];
 	$msg=mysqli_real_escape_string($con, $_POST['comment']);
-	session_start();
+
 	$uid = $_SESSION['uid'];
 
 	$check = "SELECT * FROM `appointments` WHERE `date`='$date' AND `timeslot`='$ts'";

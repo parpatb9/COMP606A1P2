@@ -13,7 +13,7 @@ if(!isset($_SESSION['aid']))
 <?php include('function.php'); ?>
 <div class="jumbotron">
   <h1 align="center">Welcome to Admin Dashboard</h1>
-  <a href="logout.php" class="btn btn-primary float-left">Logout</a>
+  <a href="logout1.php" class="btn btn-primary float-left">Logout</a>
 </div>
 
 <table class="table table-hover" style="background-color: rgba(255,255,255,0.5);">

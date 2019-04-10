@@ -13,7 +13,11 @@ $data = getApDetail($apid)
 <table class="table">
 <tr>
   <th>Name</th>
-  <td><?php echo $data[0]; ?></td>
+  <td><?php echo $data[0]." ".$data[5]; ?></td>
+</tr>
+<tr>
+  <th>Email</th>
+  <td><?php echo $data[6]; ?></td>
 </tr>
 <tr>
   <th>Date</th>
